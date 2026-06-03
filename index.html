@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Verteiler">
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="manifest-Verteiler.json">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#f4f6f9;color:#333;padding:15px;display:flex;justify-content:center}
@@ -396,7 +396,7 @@ aktualisiere();
 <script>
 if("serviceWorker" in navigator){
   window.addEventListener("load",()=>{
-    navigator.serviceWorker.register("sw.js")
+    navigator.serviceWorker.register("verteiler-sw.js")
       .then(r=>console.log("SW registriert:",r.scope))
       .catch(e=>console.log("SW Fehler:",e));
   });
