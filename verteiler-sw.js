@@ -1,15 +1,18 @@
-// sw.js – Erweiterter Service Worker für Verteiler-Bestandsaufnahme
+// verteiler-sw.js – Service Worker für ABA-Verteiler
 
-const STATIC_CACHE = 'aba-static-v1';
-const IMAGE_CACHE  = 'aba-images-v1';
-const API_CACHE    = 'aba-api-v1';
+// Cache-Namen eindeutig halten
+const STATIC_CACHE = 'verteiler-static-v1';
+const IMAGE_CACHE = 'verteiler-images-v1';
+const API_CACHE = 'verteiler-api-v1';
 
+// Statische Assets, die offline verfügbar sein sollen
 const STATIC_ASSETS = [
   './',
   './index.html',
-  './manifest.json',
-  './icon-192.png',
-  './icon-512.png'
+  './manifest-Verteiler.json',
+  './verteiler-icon-192.png',
+  './verteiler-icon-512.png',
+  './verteiler-favicon.png'
 ];
 
 // Hilfsfunktion: Cache-Größe begrenzen
