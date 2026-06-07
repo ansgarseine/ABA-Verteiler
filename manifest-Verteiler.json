@@ -1,9 +1,9 @@
 {
-  "name": "ABA - Verteiler Bestandsaufnahme",
+  "name": "ABA Verteiler Bestandsaufnahme",
   "short_name": "Verteiler",
   "description": "Verteiler Bestandsaufnahme und Materialliste für Elektriker",
-  "start_url": "/Verteiler/",
-  "scope": "/Verteiler/",
+  "start_url": "/ABA-Verteiler/index.html",
+  "scope": "/ABA-Verteiler/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f4f6f9",
